@@ -1,5 +1,56 @@
+"""
 # File: RA_03.py
 # Author: Oseide Ediale
 # Section: 005R
 # Email: oje5051@psu.edu
+"""
+
+def get_sum_for() -> int:
+    total_sum = 0
+    for i in range(1, 101)
+        total_sum += 1000 // i
+    return total_sum
+
+def get_sum_while() -> int:
+    total_sum = 0
+    i = 1
+    while i <= 100:
+        total_sum += 10000 // i
+        i += 1
+    return total_sum
+
+def sum_multiples_xor (n: int) -> int:
+    total_sum = 0
+    for i in range(1, n + 1):
+        if (i % 3 == 0) ^ (i % 7 == 0):
+            total_sum += 1
+    return total_sum
+
+def get_index(num: int, digit: int) -> int:
+    position = 1
+    while num > 0:
+        present_digit = num % 10
+        if present_digit == digit:
+            return position
+        num  = num // 10
+        position += 1
+    return -1
+
+
+########
+
+
+def main():
+    print(get_sum_for()
+    print(get_sum_while()
+    print(sum_multiples_xor(20)
+    print(get_index(353697, 8)
+    print(get_index(353697, 7)
+
+
+
+if __name__ == "__main__":
+    main()
+
+
 
